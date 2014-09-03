@@ -1,0 +1,49 @@
+Name: elasticsearch
+Cartridge-Short-Name: ELASTICSEARCH
+Display-Name: ElasticSearch 1.3.2
+Description: "ElasticSearch"
+Version: 1.3.2
+License: Apache
+Vendor: elasticsearch.org
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: julianandandy
+
+Categories:
+  - web_framework
+  - service
+
+Provides:
+  - elasticsearch
+  - elasticsearch-1.3.2
+
+Publishes:
+  publish-unicast-host:
+    Type: NET_TCP:elasticsearch-cluster-info
+  publish-http-url:
+    Type: NET_TCP:httpd-proxy-info
+  publish-gear-endpoint:
+    Type: NET_TCP:gear-endpoint-info
+
+Subscribes:
+  set-unicast-hosts:
+    Type: NET_TCP:elasticsearch-cluster-info
+
+Scaling:
+  Min: 1
+  Max: -1
+
+Endpoints:
+  - Private-IP-Name:   IP
+    Private-Port-Name: PORT
+    Private-Port:      9200
+    Public-Port-Name:  PROXY_PORT
+    Protocols:
+    - http
+    Mappings:
+    - Frontend: ''
+      Backend: ''
+
+  - Private-IP-Name:   IP
+    Private-Port-Name: TRANSPORT_PORT
+    Private-Port:      9300
+    Public-Port-Name:  TRANSPORT_PROXY_PORT
