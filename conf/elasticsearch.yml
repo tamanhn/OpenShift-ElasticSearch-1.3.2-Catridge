@@ -227,8 +227,10 @@ transport.publish_port: ${OPENSHIFT_ELASTICSEARCH_TRANSPORT_PROXY_PORT}
 # http.max_content_length: 100mb
 
 # Disable HTTP completely:
-#
+
 http.enabled: false
+
+# http.compression: true
 
 ################################### Gateway ###################################
 
