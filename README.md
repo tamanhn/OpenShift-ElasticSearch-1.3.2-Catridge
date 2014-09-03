@@ -20,6 +20,9 @@ Plugins
 =======
 To install ElasticSearch plugins, edit the `plugins.txt` file, commit, and push your changes.
 
+See more
+=======
+https://github.com/ncdc/openshift-elasticsearch-cartridge
 
 License
 =======
