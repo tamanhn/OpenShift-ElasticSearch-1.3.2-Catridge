@@ -229,7 +229,9 @@ transport.publish_port: ${OPENSHIFT_ELASTICSEARCH_TRANSPORT_PROXY_PORT}
 # Disable HTTP completely:
 #
 # http.enabled: false
-
+http.basic.enabled: true
+http.basic.user: "bmtelastic"
+http.basic.password: "I0i@=6{8rLQ5Itf"
 
 ################################### Gateway ###################################
 
