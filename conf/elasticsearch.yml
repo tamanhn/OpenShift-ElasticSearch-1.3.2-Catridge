@@ -228,9 +228,9 @@ transport.publish_port: ${OPENSHIFT_ELASTICSEARCH_TRANSPORT_PROXY_PORT}
 
 # Disable HTTP completely:
 
-http.enabled: false
+# http.enabled: false
 
-# http.compression: true
+http.compression: true
 
 ################################### Gateway ###################################
 
