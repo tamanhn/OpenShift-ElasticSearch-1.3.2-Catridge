@@ -1,4 +1,4 @@
-OpenShift ElasticSearch Cartridge
+OpenShift ElasticSearch Cartridge Test
 =================================
 Downloadable ElasticSearch cartridge for OpenShift.
 
